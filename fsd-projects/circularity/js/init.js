@@ -75,9 +75,11 @@ var init = function (window) {
 */
             // TODO 8 / TODO 9 : Iterate over the array
             
-            //the efficient version of moving circles!
-           for(i = 0; i < circles.length; i++){
+            //moves all circles without a hardcode
+           for(var i = 0; i < circles.length; i++){
+            // updates every circle's position
             physikz.updatePosition(circles[i]);
+            // checks every circle's position
             game.checkCirclePosition(circles[i])
            }
             
